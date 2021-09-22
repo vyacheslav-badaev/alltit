@@ -1,0 +1,93 @@
+@keyframes move_wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  opacity: 0.4;
+  &.top{
+   .wave{
+    background-position: 0 top;
+    transform-origin: center top;
+   }
+  }
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+.bgTop {
+  z-index: 15;
+  opacity: 1;
+  opacity: 0.8;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 1;
+  opacity: 0.8;
+}
+.bgBottom {
+  z-index: 5;
+  opacity: 1;
+  opacity: 0.5;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 120px;
+  background-image: url('~assets/images/wave_one.png');
+  &.two{
+    background-size: 50% 120px;
+    opacity: 0.6;
+  }
+}
+.waveAnimation .waveTop {
+ animation: move_wave 10s linear infinite;
+ &.two{
+  background-size: 50% 180px;
+  animation: move_wave 14s linear infinite;
+}
+}
+.waveMiddle {
+  background-size: 50% 120px;
+  background-image: url('~assets/images/wave_one.png');
+  &.two{
+    background-size: 50% 150px;
+  }
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 15s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 120px;
+  background-image: url('~assets/images/wave_two.png');
+  &.two{
+    background-size: 50% 150px;
+  }
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 20s linear infinite;
+}

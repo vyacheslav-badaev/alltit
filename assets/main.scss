@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:500, 600, 700");
+$dark: #1c1c1c;
+$green: #a6e752;
+$pink: #fa7c91;
+$text: #ffffff;
+$family-sans-serif: "Nunito", sans-serif;
+$primary: $green;
+$secondary: $text;
+$button-primary-text: $dark;
+$link: $green;
+$navbar-item-color: white !default;
+$navbar-item-active-color: $green !default;
+$body-background-color: $dark;
+$control-border-width: 0px;
+$input-border-color: transparent;
+$input-shadow: none;
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/form.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/list.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "mixins.scss";
+@import "animation.scss";
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: $dark;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color:  #131313;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: $dark;;
+}
+.has-text-weight-600 {
+  font-weight: 600;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.list-events {
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
+  .list-item {
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 1px 0px 0px rgba(10, 10, 10, 0.1), 0px 1px 0px 0px rgba(10, 10, 10, 0.1);
+    overflow: hidden;
+    margin-top: 1rem;
+    &:hover {
+      .date {
+        background-color: #a6e752;
+        color: $dark;
+      }
+    }
+    h4 {
+      font-size: 14px;
+      padding-top: 1rem;
+    }
+    .date {
+      padding-bottom: 1rem !important;
+    }
+    .day {
+      font-size: 2.6rem;
+      padding-right: 0.6rem;
+      font-weight: 400;
+      margin: 0px;
+      position: relative;
+      top: 0px;
+    }
+    .month {
+      margin-top: -18px;
+      margin-right: 12px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+.btn-tiny {
+  height: auto;
+  padding: 3px 6px 2px !important;
+  line-height: 12px;
+  background-color: #a6e752;
+  font-weight: 600;
+  font-size: 12px;
+  left: 1px;
+  top: 4px;
+  margin-bottom: 1rem;
+}
+html,
+body {
+  font-family: "Rajdhani";
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-weight: 500;
+}
+html {
+  overflow: hidden;
+  @media screen and (max-height: 925px) {
+    overflow-y: auto;
+  }
+  @include until($fullhd) {
+    overflow-y: auto !important;
+  }
+}
+.footer-columns {
+  @include until($desktop) {
+    flex-direction: column;
+  }
+}
+.posts {
+  margin-left: 4rem;
+  .card {
+    margin-left: 2rem;
+  }
+  @include until($tablet) {
+    .columns{
+      flex-direction: column;
+    }
+  }
+  @include until($fullhd) {
+    margin-left: auto;
+    .card {
+      margin-left: auto;
+    }
+  }
+}
+.white-shadow{
+  text-shadow: 1px 1px 10px #ffffff;
+}
+.container {
+  overflow: hidden;
+  &.main {
+    @include until($desktop) {
+      margin-top: 0rem;
+      .columns {
+        min-height: auto !important;
+        &.index {
+          flex-direction: column-reverse;
+          .column {
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+            margin-bottom: 2rem;
+            padding-right: 1rem !important;
+            * {
+              text-align: center !important;
+            }
+            .button {
+              float: none !important;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    @include from($desktop) {
+      margin-top: 4rem !important;
+    }
+    padding: 1rem;
+    min-width: 84%;
+    min-height: 700px;
+    z-index: 25;
+    .columns {
+      &.index {
+        margin-top: 4rem;
+        p {
+          margin-bottom: 2rem;
+        }
+        .intro {
+          padding-top: 1.5rem;
+          margin-right: 4rem;
+          @include until($fullhd) {
+            margin-right: auto;
+          }
+        }
+        .companies {
+          margin-left: 2rem;
+          @include until($fullhd) {
+            margin-left: auto;
+          }
+          a {
+            margin-top: 0.5rem;
+          }
+        }
+        .candidates {
+          @include until($fullhd) {
+            padding-right: 1rem !important;
+          }
+          padding-right: 7rem;
+          a {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+.navbar {
+  background: transparent;
+  .navbar-burger {
+    color: white !important;
+    a {
+      color: white !important;
+    }
+  }
+  @include until($desktop) {
+    margin-top: 0rem;
+  }
+  .logo {
+    z-index: 20;
+    position: absolute;
+    width: 230px;
+    top: -1rem;
+  }
+  @include until($desktop) {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    .logo {
+      width: 130px;
+      top: 0px;
+      left: 0.8rem;
+    }
+    .navbar-menu {
+      background-color: $dark;
+      .navbar-item {
+        &:hover,
+        &.is-active {
+          background-color: transparent;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .navbar-item {
+    text-transform: uppercase;
+    padding: 0.5rem 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      content: "";
+      width: 0%;
+      height: 3px;
+      background-color: $green;
+      position: absolute;
+      display: block;
+      margin-top: 12px;
+    }
+    &.is-active,
+    &:hover {
+      &::after {
+        @include animate(500ms, all, ease);
+        width: 100%;
+      }
+    }
+  }
+}
+.bottom {
+  margin: 0rem;
+  margin-top: 3.5rem;
+  color: rgb(214, 214, 214);
+  width: 100%;
+  @include until($desktop) {
+    flex-direction: column-reverse;
+    .column {
+      text-align: center !important;
+      font-size: 0.8rem;
+    }
+    .columns {
+      flex-direction: column-reverse;
+    }
+  }
+}
+.copyright {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+}
+.contact {
+  text-align: left;
+  font-size: 11px;
+  .column {
+    text-align: right;
+    &:hover {
+      a,
+      .text {
+        color: #a6e752 !important;
+      }
+    }
+    .text {
+      margin-left: 0.5rem;
+      color: white;
+    }
+  }
+}
+.card {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  .card-image {
+    img {
+      @include from($desktop) {
+        height: 10rem;
+      }
+      @include until($desktop) {
+        max-height: 17rem;
+      }
+      width: 100%;
+    }
+  }
+  .title {
+    font-weight: 600;
+  }
+  .text {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.7rem;
+  }
+}
