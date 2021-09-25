@@ -2,7 +2,7 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
   router: {
-    base: process.env.NODE_ENV === 'GH_PAGES'  ? '/alltitude/' : '/'
+    base: process.env.NODE_ENV === 'GH_PAGES' ? '/alltitude/' : '/'
   },
   head: {
     title: pkg.name,

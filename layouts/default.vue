@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-show="loaded">
     <Wave css-class="top" />
     <div class="container main">
       <Navbar />
@@ -30,6 +30,17 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 export default {
   name: 'Default',
-  components: { Wave, Navbar, Footer, Bottom }
+  components: { Wave, Navbar, Footer, Bottom },
+  data() {
+    return {
+      loaded: false
+    }
+  },
+  mounted() {
+    const local = this
+    window.onload = () => {
+      local.loaded = true
+    }
+  }
 }
 </script>
