@@ -1,6 +1,10 @@
 <template>
   <div class="card">
     <div class="card-image">
+      <div class="social">
+        <font-awesome-icon :icon="['fab', 'twitter']" />
+        <font-awesome-icon :icon="['fab', 'facebook']" />
+      </div>
       <img :src="post.image" alt="Placeholder image" />
     </div>
     <div class="card-content">

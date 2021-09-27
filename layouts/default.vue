@@ -23,9 +23,23 @@ import {
   faFax,
   faEnvelope
 } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import {
+  faLinkedinIn,
+  faLinkedin,
+  faTwitter,
+  faFacebook
+} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-library.add(faCopyright, faPhone, faFax, faLinkedin, faLinkedinIn, faEnvelope)
+library.add(
+  faCopyright,
+  faPhone,
+  faFax,
+  faLinkedin,
+  faLinkedinIn,
+  faEnvelope,
+  faTwitter,
+  faFacebook
+)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 export default {
