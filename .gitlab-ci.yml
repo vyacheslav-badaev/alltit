@@ -5,4 +5,4 @@ pull:
   - git pull
 start:
   pm2:
-  - pm2 update
+  - /usr/bin/pm2 update
