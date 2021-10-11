@@ -3,6 +3,3 @@ before_script:
 pull:
   script:
   - git pull
-start:
-  pm2:
-  - /usr/bin/pm2 update
