@@ -1,6 +1,6 @@
 before_script:
   - sudo apt-get update
-  - cd /root/alltitude/
+  - sudo cd /root/alltitude/
 pull:
   script:
   - echo 'Starting deploy'
