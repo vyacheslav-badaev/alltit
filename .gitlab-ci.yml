@@ -1,4 +1,4 @@
 pull:
   script:
   - echo 'Starting deploy'
-  - git -C /root/alltitude pull
+  - sudo git -C /root/alltitude pull
