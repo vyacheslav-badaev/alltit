@@ -1,3 +1,5 @@
+before_script:
+  - sudo apt-get update
 pull:
   script:
   - echo 'Starting deploy'
