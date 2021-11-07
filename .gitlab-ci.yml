@@ -1,5 +1,9 @@
 before_script:
   - sudo apt-get update
+test:
+  script:
+  - echo 'Starting Tests'
+  - sudo yarn text
 pull:
   script:
   - echo 'Starting deploy'
