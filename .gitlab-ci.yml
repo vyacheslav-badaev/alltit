@@ -3,7 +3,7 @@ before_script:
 test:
   script:
   - echo 'Starting Tests'
-  - sudo yarn text
+  - sudo yarn test
 pull:
   script:
   - echo 'Starting deploy'
