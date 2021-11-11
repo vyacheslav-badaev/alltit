@@ -3,7 +3,7 @@ before_script:
 test:
   script:
   - echo 'Starting Tests'
-  - sudo yarn test
+  - echo $PWD
 pull:
   script:
   - echo 'Starting deploy'
