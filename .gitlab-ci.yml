@@ -1,11 +1,10 @@
 before_script:
   - sudo apt-get update
-test:
+deploy:
   script:
   - echo 'Starting Tests'
-  - echo $PWD
-pull:
-  script:
+  - sudo yarn 
+  - sudo yarn test
   - echo 'Starting deploy'
   - sudo git -C /root/alltitude pull
   - echo 'Build Nuxt'
