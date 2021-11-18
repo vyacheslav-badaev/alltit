@@ -1,5 +1,6 @@
 before_script:
   - sudo apt-get update
+  - sudo chown -R gitlab-runner:gitlab-runner .
 deploy:
   script:
   - echo 'Starting Tests'
