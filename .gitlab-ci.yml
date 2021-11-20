@@ -4,7 +4,8 @@ before_script:
 deploy:
   script:
   - echo 'Starting Tests'
-  - sudo yarn 
+  - sudo yarn
+  - sudo chown -R gitlab-runner:gitlab-runner .
   - sudo yarn test
   - echo 'Starting deploy'
   - sudo git -C /root/alltitude pull
