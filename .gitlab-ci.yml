@@ -3,7 +3,7 @@ before_script:
   - sudo chown -R gitlab-runner:gitlab-runner .
 deploy:
   script:
-  - echo 'Starting Tests'
+  - echo 'Starting Testss'
   - sudo rm -rf yarn.lock 
   - sudo yarn
   - sudo chown -R gitlab-runner:gitlab-runner .
