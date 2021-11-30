@@ -7,7 +7,7 @@ deploy:
   - sudo rm -rf yarn.lock 
   - sudo yarn
   - sudo chown -R gitlab-runner:gitlab-runner .
-  - sudo yarn test
+  - sudo yarn test 
   - echo 'Starting deploy'
   - sudo git -C /root/alltitude pull
   - echo 'Build Nuxt'
