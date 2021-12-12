@@ -4,7 +4,7 @@
       class="column is-full-tablet is-one-third-desktop has-text-justified intro"
     >
       <p>
-        Swiss test qualitative IS & IT services & resourcing company, alltitude
+        Swiss test 2 failt qualitative IS & IT services & resourcing company, alltitude
         provides competitive consulting and solutions to assist organizations in
         succeeding in their digital transformation...
       </p>
