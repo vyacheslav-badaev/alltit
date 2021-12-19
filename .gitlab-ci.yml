@@ -1,12 +1,16 @@
 before_script:
   - sudo apt-get update
   - sudo chown -R gitlab-runner:gitlab-runner .
-deploy:
+test:
+  stage: test
   script:
   - echo 'Starting Tests'
   - sudo yarn
   - sudo chown -R gitlab-runner:gitlab-runner .
   - sudo yarn test 
+deploy:
+  stage: build
+  script:
   - echo 'Starting deploy'
   - sudo git -C /root/alltitude pull
   - echo 'Build Nuxt'
