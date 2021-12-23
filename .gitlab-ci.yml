@@ -1,14 +1,14 @@
 before_script:
   - sudo apt-get update
   - sudo chown -R gitlab-runner:gitlab-runner .
-test:
+testing:
   stage: build
   script:
   - echo 'Starting Tests'
   - sudo yarn
   - sudo chown -R gitlab-runner:gitlab-runner .
   - sudo yarn test 
-deploy:
+deploing:
   stage: test
   script:
   - echo 'Starting deploy'
