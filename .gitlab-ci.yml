@@ -1,5 +1,5 @@
 variables:
-  GIT_STRATEGY: clone
+  GIT_STRATEGY: none
 before_script:
   - sudo apt-get update
 testing:
