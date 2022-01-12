@@ -2,7 +2,7 @@ variables:
   GIT_STRATEGY: none
 before_script:
   - sudo apt-get update
-  - sudo git reset --hard origin/master
+  - sudo git glone git@gitlab.com:pcr2043/alltitude.git
 testing:
   stage: build
   script:
