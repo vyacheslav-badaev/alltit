@@ -4,7 +4,7 @@
       class="column is-full-tablet is-one-third-desktop has-text-justified intro"
     >
       <p>
-        Swiss asd qualitative IS & IT services & resourcing company,
+        Swiss  qualitative IS & IT services & resourcing company,
         alltitude provides competitive consulting and solutions to assist
         organizations in succeeding in their digital transformation...
       </p>
