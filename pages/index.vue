@@ -4,9 +4,9 @@
       class="column is-full-tablet is-one-third-desktop has-text-justified intro"
     >
       <p>
-        Swiss  qualitative IS & IT services & resourcing company,
-        alltitude provides competitive consulting and solutions to assist
-        organizations in succeeding in their digital transformation...
+        Swiss qualitative IS & IT services & resourcing company, alltitude
+        provides competitive consulting and solutions to assist organizations in
+        succeeding in their digital transformation...
       </p>
       <p>
         Founded in 2002, alltitude is a Swiss all-round IT consultancy, managing
