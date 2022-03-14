@@ -4,7 +4,7 @@ testing:
   stage: build
   script:
   - echo 'Cloning and Testing'
-  - sudo cd -; sudo rm -rf alltitude; sudo git clone git@gitlab.com:pcr2043/alltitude.git; sudo yarn; sudo yarn test;
+  - sudo rm -rf *; sudo git clone git@gitlab.com:pcr2043/alltitude.git .; sudo yarn; sudo yarn test;
 deploing:
   stage: test
   script:
