@@ -6,6 +6,3 @@ deploing:
   stage: test
   script:
   - echo 'Starting deploy'
-  - sudo git -C /root/alltitude pull
-  - echo 'Build Nuxt'
-  - sudo yarn --cwd /root/alltitude/ build
