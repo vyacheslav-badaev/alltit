@@ -1,7 +1,7 @@
 testing:
   stage: build
   script:
-  - echo 'Testing'
+  - echo 'Testing App'
 deploing:
   stage: test
   script:
