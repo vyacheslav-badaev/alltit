@@ -2,6 +2,7 @@ testing:
   stage: build
   script:
   - echo 'Testing App'
+  - echo $PWD
 deploing:
   stage: test
   script:
