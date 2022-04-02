@@ -2,7 +2,7 @@ testing:
   stage: build
   script:
   - echo 'Testing App'
-  - echo $PWD
+  - yarn;yarn test
 deploing:
   stage: test
   script:
