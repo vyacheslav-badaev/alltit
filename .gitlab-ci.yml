@@ -2,7 +2,7 @@ testing:
   stage: build
   script:
   - echo 'Testing App'
-  - sudo yarn;sudo yarn test
+  - yarn;yarn test
 deploing:
   stage: test
   script:
