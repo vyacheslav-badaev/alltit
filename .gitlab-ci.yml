@@ -2,7 +2,7 @@ testing:
   stage: build
   script:
   - echo 'Testing App'
-  - yarn;yarn test
+  - /usr/share/yarn/bin/yarn
 deploing:
   stage: test
   script:
