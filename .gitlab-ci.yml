@@ -1,8 +1,16 @@
+image: node:latest
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - node_modules/
+  - coverage/
+before_script:
+  - npm install
 testing:
   stage: build
   script:
   - echo 'Testing App'
-  - /usr/share/yarn/bin/yarn
+  - npm run test
 deploing:
   stage: test
   script:
