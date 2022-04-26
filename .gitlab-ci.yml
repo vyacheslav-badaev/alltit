@@ -16,4 +16,4 @@ deploing:
   script:
   - echo 'Starting deploy'
   - git -C /root/alltitude pull
-  - npm --cwd /root/alltitude/ build
+  - sudo npm --cwd /root/alltitude/ build
