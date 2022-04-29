@@ -6,11 +6,6 @@ cache:
   - coverage/
 before_script:
   - npm install
-testing:
-  stage: build
-  script:
-  - echo 'Testing App'
-  - npm run test
 deploing:
   stage: test
   script:
