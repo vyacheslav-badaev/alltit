@@ -4,11 +4,9 @@ cache:
   paths:
   - node_modules/
   - coverage/
-before_script:
-  - npm install
 deploing:
   stage: test
   script:
   - echo 'Starting deploy'
   - git -C /root/alltitude pull
-  - sudo npm --cwd /root/alltitude/ build
+  - echo $PWD
