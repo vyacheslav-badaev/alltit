@@ -2,5 +2,5 @@ deploing:
   stage: test
   script:
   - echo 'Starting deploy'
-  - git -C /root/alltitude pull
+  - git -C ../../../../../prod/alltitude/ pull
   - echo $PWD
