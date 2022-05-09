@@ -3,4 +3,4 @@ deploing:
   script:
   - echo 'Starting deploy'
   - git -C ../../../../../prod/alltitude/ pull
-  - echo $PWD
+  - npm --cwd ../../../../../prod/alltitude/ run build
