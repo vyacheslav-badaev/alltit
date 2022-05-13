@@ -4,7 +4,7 @@
       class="column is-full-tablet is-one-third-desktop has-text-justified intro"
     >
       <p>
-        Swiss qualitative teste IS & IT services & resourcing company, alltitude
+        Swiss qualitative NEWS IS & IT services & resourcing company, alltitude
         provides competitive consulting and solutions to assist organizations in
         succeeding in their digital transformation...
       </p>
