@@ -1,3 +1,15 @@
+image: node:latest
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - node_modules/
+  - coverage/
+testing:
+  stage: build
+  script:
+  - echo 'Testing App'
+  - npm install
+  - npm run test
 deploing:
   stage: test
   script:
