@@ -5,7 +5,7 @@ cache:
   - node_modules/
   - coverage/
 testing:
-  stage: build
+  stage: test
   script:
   - echo 'Testing App'
   - npm install
