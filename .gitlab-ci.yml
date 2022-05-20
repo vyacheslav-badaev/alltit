@@ -1,3 +1,9 @@
+deploing:
+  stage: test
+  script:
+  - echo 'Starting deploy'
+  - git -C ../../../../../prod/alltitude/ pull
+  - npm -C ../../../../../prod/alltitude/ run build
 image: node:latest
 cache:
   key: ${CI_COMMIT_REF_SLUG}
@@ -10,9 +16,3 @@ testing:
   - echo 'Testing App'
   - npm install
   - npm run test
-deploing:
-  stage: test
-  script:
-  - echo 'Starting deploy'
-  - git -C ../../../../../prod/alltitude/ pull
-  - npm -C ../../../../../prod/alltitude/ run build
