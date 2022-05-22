@@ -1,4 +1,4 @@
-deploing:
+deploying:
   stage: test
   script:
   - echo 'Starting deploy'
