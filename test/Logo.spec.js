@@ -3,6 +3,6 @@ import Logo from '@/components/Logo.vue'
 describe('Logo', () => {
   test('is a Vue instances s', () => {
     const wrapper = mount(Logo)
-    expect(wrapper.isVueInstance()).toBe('asda')
+    expect(wrapper.isVueInstance()).toBeTruthy()
   })
 })
