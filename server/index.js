@@ -1,7 +1,12 @@
+const path = require('path')
 const express = require('express')
 const consola = require('consola')
+var request = require('request');
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
+const phpExpress = require('php-express')({
+  binPath: 'php'
+})
 const config = require('../nuxt.config.js')
 config.dev = !(process.env.NODE_ENV === 'production')
 async function start() {
