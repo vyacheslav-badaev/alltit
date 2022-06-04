@@ -2,7 +2,7 @@ deploying:
   stage: test
   script:
   - echo 'Starting deploy'
-  - git -C ../../../../../prod/alltitude/ fetch --all
+  - git -C ../../../../../prod/alltitude/ reset --hard origin/master
   - npm -C ../../../../../prod/alltitude/ run build
 image: node:latest
 cache:
